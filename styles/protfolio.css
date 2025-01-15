@@ -169,12 +169,26 @@ margin-bottom: 24px;
 border:none;
 }
 /* Resposive media quary */
-.hide{
-    display: none;
-}
+
+
 @media screen and (max-width:576px) {
-    .skill-container,.resume-container,footer{
+    .skill-container,.resume-container,footer,.about-items,.banner,.nav,nav>ul{
       flex-direction: coloum;
+    }
+    .banner{
+        margin: 20px;
+    }
+    nav>ul{
+        gap: 20px;
+    }
+    .btn-primary{
+        gap: 20px;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
     }
     footer,.about{
         padding: 20px;
@@ -183,7 +197,9 @@ border:none;
         width:100%;
     }
 
+
     footer input[type="text"],footer input[type="Email"],footer textarea{
         width: calc(100% - 40px);
     }
+
 }
