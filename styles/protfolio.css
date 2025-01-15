@@ -170,36 +170,42 @@ border:none;
 }
 /* Resposive media quary */
 
-
-@media screen and (max-width:576px) {
-    .skill-container,.resume-container,footer,.about-items,.banner,.nav,nav>ul{
-      flex-direction: coloum;
+@media screen and (max-width: 576px) {
+    .skill-container, .resume-container, footer, .about-items, .banner, .nav, nav > ul {
+        flex-direction: column; /* Correct spelling */
     }
-    .banner{
+
+    .banner {
         margin: 20px;
     }
-    nav>ul{
+
+    nav > ul {
         gap: 20px;
     }
-    .btn-primary{
-        gap: 20px;
+
+    .btn-primary {
+        padding: 10px 20px; /* Replace gap with padding */
     }
-    .banner-profile-pic{
+
+    .banner-profile-pic {
         width: 100%;
     }
-    .header{
+
+    .header {
         background-image: none;
     }
-    footer,.about{
+
+    footer, .about {
         padding: 20px;
     }
-    .footer-coloum{
-        width:100%;
+
+    .footer-column {
+        width: 100%;
     }
 
-
-    footer input[type="text"],footer input[type="Email"],footer textarea{
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea {
         width: calc(100% - 40px);
     }
-
 }
